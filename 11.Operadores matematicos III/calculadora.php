@@ -1,0 +1,75 @@
+<style>
+
+    .resultado{
+        color:#58FF33;
+        font-weight:bold;
+        font-size:32px;
+    }
+</style>
+
+<?php
+    
+    function calcular($calculo){
+
+        global $numero1;
+        global $numero2;
+
+        if(!strcmp("Suma",$calculo)){
+
+            $resultado=$numero1+$numero2;
+
+            echo "<p class='resultado'> El resultado es: $resultado </p>";
+        }
+        
+        if(!strcmp("Resta",$calculo)){
+
+            $resultado=$numero1-$numero2;
+
+            echo "<p class='resultado'> El resultado es: $resultado </p>";
+        }
+
+        if(!strcmp("Multiplicación",$calculo)){
+
+            $resultado=$numero1*$numero2;
+
+            echo "<p class='resultado'> El resultado es: $resultado </p>";  
+        }
+
+        if(!strcmp("División",$calculo)){
+
+            $resultado=$numero1/$numero2;
+
+            echo "<p class='resultado'> El resultado es: $resultado </p>";
+           
+        }
+
+        if(!strcmp("Módulo",$calculo)){
+
+            $resultado=$numero1%$numero2;
+
+            echo "<p class='resultado'> El resultado es: $resultado </p>";
+        }
+
+        
+        if(!strcmp("Incremento",$calculo)){
+
+            $numero1++;
+            
+            $resultado = $numero1;
+
+            echo "<p class='resultado'> El resultado es: $resultado </p>";
+        }
+
+        
+        if(!strcmp("Decremento",$calculo)){
+            
+            $numero1--;
+            
+            $resultado = $numero1;
+
+            echo "<p class='resultado'> El resultado es: $resultado </p>";
+        }
+   
+    }
+
+?>
