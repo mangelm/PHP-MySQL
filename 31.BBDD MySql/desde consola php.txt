@@ -1,0 +1,12 @@
+Click izquierdo en icono wamp
+Nos vamos a mysql
+abrimos mysql console
+
+Creamos database:
+create database prueba;
+
+Borrar database:
+drop database prueba;
+
+Mostrar database:
+show database;
